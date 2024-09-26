@@ -16,12 +16,6 @@ void setup(){
 
 void draw(){
   background(0);
-  x1 +=vx1;
-  y1 +=vy1;
-  heejun(x1,y1,d1);
-  if(y1<0 || y1>height) vy1=-vy1;
-  if(x1<0 || x1>width) vx1=-vx1;
-   
   x2 +=vx2;
   y2 +=vy2;
   heejun(x2,y2,d2);
