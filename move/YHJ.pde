@@ -1,4 +1,4 @@
-void heejun(float x, float y, float d){
+void YHJ(float x, float y, float d){
  fill(#DCDCDC);
  rect(x+d,y+13.5*d,4*d,5*d); //right leg
  rect(x-3*d,y+13.5*d,6*d,5*d); //left leg
