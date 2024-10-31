@@ -5,13 +5,11 @@ class HJ {
     d =a;
     vx = b;
     vy = c;
-    i=1;
-    j=1;
 
  
   }
   float x,y,d,r,g,b;
-  float vx, vy,i,j;
+  float vx, vy;
 
   void show(float r, float g, float b){
     fill(#DCDCDC);
@@ -33,12 +31,10 @@ class HJ {
     x += vx;
     y += vy;
     if((x>width)||(x<0)){
-      i=i*(-1);
-      vx = i*random(15);                //벽에 닿으면 튕기게 하기
+      vx = -vx;                //벽에 닿으면 튕기게 하기
   }
     if((y>height)||(y<0)){
-      j=j*(-1);
-      vy = j*random(15);
+      vy = -vy;
     }
 }
 }
