@@ -1,7 +1,7 @@
 HJ ss;
 float frames,r,g,e;
 void setup(){
-  
+  frameRate(60);
   r=123;
   g=123;
   e=123;
@@ -13,7 +13,7 @@ void draw(){
   float a,b;
 
   background(0);
-  frameRate(60);
+
   frames = frames + 1;
   if((frames%60)==0){
     r=int(random(255));
