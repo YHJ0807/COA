@@ -13,8 +13,9 @@ void draw(){
   float a,b;
 
   background(0);
+  frameRate(60);
   frames = frames + 1;
-  if((frames%30)==0){
+  if((frames%60)==0){
     r=int(random(255));
     g=int(random(255));
     e=int(random(255));
