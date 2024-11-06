@@ -39,11 +39,15 @@ class HJ {
 }
 
   void collide(HJ h){
-    float dd;
+    float dd, a,b;
     dd = sqrt((x-h.x)*(x-h.x)+(y-h.y)*(y-h.y));
-    if(dd<5.25*d){
-      vx = vy =0;
-      h.vx = h.vy =0;
+    if(dd<5.5*d){
+      a= vx;
+      b= vy;
+      vx = h.vx;
+      vy = h.vy;
+      h.vx= a;
+      h.vy= b;
     }
   }
 }
