@@ -38,12 +38,12 @@ class HJ {
     }
 }
 
-void collide(HJ h){
-  float dd;
-  dd = sqrt((x-h.x)*(x-h.x)+(y-h.y)*(y-h.y));
-  if(dd<5.25*d){
-    vx = vy =0;
-    h.vx = h.vy =0;
+  void collide(HJ h){
+    float dd;
+    dd = sqrt((x-h.x)*(x-h.x)+(y-h.y)*(y-h.y));
+    if(dd<5.25*d){
+      vx = vy =0;
+      h.vx = h.vy =0;
+    }
   }
-}
 }
